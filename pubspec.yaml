@@ -1,0 +1,35 @@
+name: keshav_alert_aura_neww
+description: A safety app designed to send emergency alerts with location to contacts.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP communication
+  http: ^1.0.0
+  # Securely storing the JWT token
+  flutter_secure_storage: ^9.0.0
+  # For accessing location services
+  geolocator: ^12.0.0 
+  # For detecting phone shake gestures
+  shake: ^3.0.0
+
+  # For the new mock architecture used in this multi-file view
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  # 🔴 REMOVED THE FOLLOWING BLOCK (Lines 30-31 from your snippet):
+  # keshav_alert_aura_neww: 
+  #   path: ../keshav_alert_aura_neww
+  
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
